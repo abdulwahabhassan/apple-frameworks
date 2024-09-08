@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5C09A6682C8D9DC3007D589B /* AppleFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A6672C8D9DC3007D589B /* AppleFrameworksApp.swift */; };
 		5C09A66A2C8D9DC3007D589B /* FrameWorkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A6692C8D9DC3007D589B /* FrameWorkGridView.swift */; };
-		5C09A66C2C8D9DC3007D589B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A66B2C8D9DC3007D589B /* Item.swift */; };
 		5C09A66E2C8D9DC7007D589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C09A66D2C8D9DC7007D589B /* Assets.xcassets */; };
 		5C09A6712C8D9DC7007D589B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C09A6702C8D9DC7007D589B /* Preview Assets.xcassets */; };
 		5C09A6782C8D9E0F007D589B /* FrameWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A6772C8D9E0F007D589B /* FrameWork.swift */; };
@@ -24,7 +23,6 @@
 		5C09A6642C8D9DC3007D589B /* AppleFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C09A6672C8D9DC3007D589B /* AppleFrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworksApp.swift; sourceTree = "<group>"; };
 		5C09A6692C8D9DC3007D589B /* FrameWorkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkGridView.swift; sourceTree = "<group>"; };
-		5C09A66B2C8D9DC3007D589B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5C09A66D2C8D9DC7007D589B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C09A6702C8D9DC7007D589B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C09A6772C8D9E0F007D589B /* FrameWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWork.swift; sourceTree = "<group>"; };
@@ -65,15 +63,10 @@
 		5C09A6662C8D9DC3007D589B /* AppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C09A6872C8E31E5007D589B /* Views */,
+				5C09A6862C8E3135007D589B /* Model */,
+				5C09A6832C8E30CF007D589B /* Screens */,
 				5C09A6672C8D9DC3007D589B /* AppleFrameworksApp.swift */,
-				5C09A6692C8D9DC3007D589B /* FrameWorkGridView.swift */,
-				5C09A6772C8D9E0F007D589B /* FrameWork.swift */,
-				5C09A67B2C8DB546007D589B /* FrameWorkDetailView.swift */,
-				5C09A6792C8DA145007D589B /* FrameWorkGridViewItem.swift */,
-				5C09A67F2C8DC71F007D589B /* FrameWorkGridViewModel.swift */,
-				5C09A6812C8DE43E007D589B /* SafariView.swift */,
-				5C09A67D2C8DBFDF007D589B /* AFButton.swift */,
-				5C09A66B2C8D9DC3007D589B /* Item.swift */,
 				5C09A66D2C8D9DC7007D589B /* Assets.xcassets */,
 				5C09A66F2C8D9DC7007D589B /* Preview Content */,
 			);
@@ -86,6 +79,66 @@
 				5C09A6702C8D9DC7007D589B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C09A6832C8E30CF007D589B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A6842C8E30E3007D589B /* FrameworksGridView */,
+				5C09A6852C8E30F7007D589B /* FrameWorkDetailView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5C09A6842C8E30E3007D589B /* FrameworksGridView */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A6692C8D9DC3007D589B /* FrameWorkGridView.swift */,
+				5C09A6792C8DA145007D589B /* FrameWorkGridViewItem.swift */,
+				5C09A67F2C8DC71F007D589B /* FrameWorkGridViewModel.swift */,
+			);
+			path = FrameworksGridView;
+			sourceTree = "<group>";
+		};
+		5C09A6852C8E30F7007D589B /* FrameWorkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A67B2C8DB546007D589B /* FrameWorkDetailView.swift */,
+			);
+			path = FrameWorkDetailView;
+			sourceTree = "<group>";
+		};
+		5C09A6862C8E3135007D589B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A6772C8D9E0F007D589B /* FrameWork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C09A6872C8E31E5007D589B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A6892C8E321E007D589B /* UiKit Components */,
+				5C09A6882C8E31FB007D589B /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C09A6882C8E31FB007D589B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A67D2C8DBFDF007D589B /* AFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5C09A6892C8E321E007D589B /* UiKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C09A6812C8DE43E007D589B /* SafariView.swift */,
+			);
+			path = "UiKit Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +217,6 @@
 				5C09A6782C8D9E0F007D589B /* FrameWork.swift in Sources */,
 				5C09A66A2C8D9DC3007D589B /* FrameWorkGridView.swift in Sources */,
 				5C09A67A2C8DA145007D589B /* FrameWorkGridViewItem.swift in Sources */,
-				5C09A66C2C8D9DC3007D589B /* Item.swift in Sources */,
 				5C09A6682C8D9DC3007D589B /* AppleFrameworksApp.swift in Sources */,
 				5C09A6802C8DC71F007D589B /* FrameWorkGridViewModel.swift in Sources */,
 			);
