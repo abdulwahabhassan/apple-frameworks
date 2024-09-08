@@ -19,7 +19,7 @@ struct FrameWorkGridView: View {
     ]
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks) { frameWork in
