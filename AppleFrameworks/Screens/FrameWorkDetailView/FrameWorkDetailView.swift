@@ -20,10 +20,14 @@ struct FrameWorkDetailView: View {
                     isShowingDetailView = false
                 }, label: {
                     Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
+                        .imageScale(.medium)
+                        .frame(width: 16, height: 24)
                 })
+                .buttonStyle(.bordered)
+                .controlSize(.regular)
+                .foregroundColor(.red)
+                .tint(.red)
+                
                 
             }
             FrameWorkGridViewItem(framework: frameWork)
